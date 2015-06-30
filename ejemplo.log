@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.28)  29 JUN 2015 12:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.6.28)  30 JUN 2015 00:34
 entering extended mode
 **ejemplo.tex
 (C:\Users\MarioAlberto\Documents\LaTeX\primerDoc\ejemplo.tex
@@ -228,33 +228,178 @@ LaTeX Font Info:    ... okay on input line 13.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+<./logoUAEM.png, id=1, 926.46124pt x 437.635pt>
+File: ./logoUAEM.png Graphic file (type png)
+ <use ./logoUAEM.png>
+Package pdftex.def Info: ./logoUAEM.png used on input line 20.
+(pdftex.def)             Requested size: 227.62204pt x 107.51866pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/MarioAlberto/Doc
+uments/LaTeX/primerDoc/logoUAEM.png>]
+(C:\Users\MarioAlberto\Documents\LaTeX\primerDoc\ejemplo.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+))
+\tf@toc=\write3
+ [1]
+Overfull \hbox (2.80058pt too wide) in paragraph at lines 93--93
+[]\OT1/cmr/bx/n/14.4 Criterios por los cuales se puede de-ter-mi-nar un metod
+o
+ []
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(C:\Users\MarioAlberto\Documents\LaTeX\primerDoc\ejemplo.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--116
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+[]\OT1/cmr/bx/n/12 Medida de
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/12 Idoneidad para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/12 Porcentaje
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+\OT1/cmr/m/n/12 de ob-je-tivos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/12 Tiempo para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+\OT1/cmr/m/n/12 com-ple-tar una
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 137--137
+[]\OT1/cmr/m/n/12 Adecuado para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]\OT1/cmr/m/n/12 Eficiencia rel-a-
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 tiva com-parada
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 con un usuario
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 sat-is-faccion con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+\OT1/cmr/m/n/12 car-ac-tersticas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/12 Facilidad de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/12 Porcentaje
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+\OT1/cmr/m/n/12 de fun-ciones
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/12 Criterio de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+\OT1/cmr/m/n/12 tiempo para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\OT1/cmr/m/n/12 Porcentaje de
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 139--139
+\OT1/cmr/m/n/12 er-rores cor-regi-
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 139--139
+\OT1/cmr/m/n/12 dos sat-is-fac-to-ri-
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 139--139
+\OT1/cmr/m/n/12 en cor-re-gir er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\OT1/cmr/m/n/12 fi-cacion para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\OT1/cmr/m/n/12 manejo de
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
+
+ []
+
+[5] (C:\Users\MarioAlberto\Documents\LaTeX\primerDoc\ejemplo.aux) ) 
 Here is how much of TeX's memory you used:
- 2540 strings out of 493921
- 32755 string characters out of 3147261
- 93506 words of memory out of 3000000
- 5827 multiletter control sequences out of 15000+200000
- 7749 words of font info for 30 fonts, out of 3000000 for 9000
+ 2573 strings out of 493921
+ 33167 string characters out of 3147261
+ 98522 words of memory out of 3000000
+ 5848 multiletter control sequences out of 15000+200000
+ 9803 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,7n,24p,370b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on ejemplo.pdf (2 pages, 43255 bytes).
+ 27i,10n,24p,370b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on ejemplo.pdf (6 pages, 143216 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

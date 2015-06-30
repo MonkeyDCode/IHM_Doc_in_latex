@@ -11,7 +11,45 @@
 %comentario
 
 \begin{document}
-\maketitle
+\begin{titlepage}
+\vspace*{0.15in}
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./logoUAEM}
+\end{center}
+\end{figure}
+\vspace*{0.15in}
+FACULTAD DE INGENIERÍA\\
+\vspace*{0.15in}
+INGENIERÍA EN COMPUTACIÓN \\
+\vspace*{0.6in}
+\begin{large}
+INTERACCIÓN HOMBRE MÁQUINA\\
+\end{large}
+\vspace*{1.5in}
+\begin{Large}
+\textbf{INGENIERÍA DE LA USABLIDAD} \\
+\end{Large}
+\vspace*{1in}
+\begin{large}
+POR: MARIO ALBERTO GUTIÉRREZ CORRAL\\
+\end{large}
+\vspace*{0.6in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Profesor: \\
+Dr. Marcelo Romero Huertas \\
+\end{large}
+\end{center}
+
+\end{titlepage}
+%\maketitle
+\newpage
+
+\tableofcontents
 \newpage
 %\centerline{\underline{\Huge\textbf{La Usabilidad}}}
 \section{Introducción}
@@ -34,4 +72,86 @@ En relación con el ciclo de vida del software, una de las características import
 
 
 
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Atributo & \hspace{3cm} \\
+\hline
+Concepto a medir &  \\ \hline
+Método de medición &  \\ \hline
+Nivel actual &  \\ \hline
+Peor nivel &  \\ \hline
+Nivel planeado &  \\ \hline
+Mejor nivel &  \\ \hline
+\end{tabular}
+\caption{Formato para una especificación de usabilidad.}
+\label{tabla:uno}
+\end{center}
+\end{table}
+
+\subsection{Criterios por los cuáles se puede determinar un método de medición}
+\bigskip
+1. Tiempo para completar una tarea \newline
+2. Porcentaje de la tarea completada \newline
+3. Porcentaje de la tarea completada por unidad de tiempo \newline
+4. Proporción de éxitos de los fracasos \newline
+5. El tiempo dedicado a los errores \newline
+6. Porcentaje o número de errores \newline
+7. Porcentaje o número de competidores mejor de lo que \newline
+8. Número de comandos usados \newline
+9. Frecuencia de la ayuda y documentación uso \newline
+10. Porcentaje de los comentarios de los usuarios favorables / desfavorables \newline
+11. Número de repeticiones de comandos fallidos \newline
+12. Número de pistas de los éxitos y de los fracasos \newline
+13. Número de veces que la interfaz engaña al usuario \newline
+14. Número de buenas y malas características recordadas por los usuarios \newline
+15. Número de comandos disponibles no invocó \newline
+16. Número de comportamientos regresivos \newline
+17. Número de usuarios que prefieren el sistema\newline
+18. Número de veces que los usuarios necesitan trabajar sobre una tarea \newline
+19. Número de veces que el usuario se ve interrumpida por una tarea de trabajo \newline
+20. Número de veces que el usuario pierde el control del sistema \newline
+21. Número de veces que el usuario expresa la frustración o satisfacción\newline
+
+\subsection{Posibles maneras de configurar los niveles de medición en una especificación de usabilidad}
+\bigskip
+1. Un sistema existente o la versión anterior \newline
+2. Sistemas de la competencia \newline
+3. Llevar a cabo la tarea sin el uso de un sistema informático \newline
+4. Una escala absoluta \newline
+5. Su propio prototipo \newline
+6. Propio desempeño anterior del usuario \newline
+7. Cada componente de un sistema separado \newline
+8. Una división sucesiva de la diferencia entre los mejores y los peores valores observados en las pruebas del usuario\newline
+
+\subsection{Ejemplos de métricas de usabilidad de la norma ISO 9241}
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Objetivo de la usabilidad} & \textbf{Medida de la eficacia} & \textbf{Medida de la eficiencia} & \textbf{Medida de satisfacción} \\
+\hline
+\hline
+Idoneidad para la tarea & Porcentaje de objetivos alcanzados & Tiempo para completar una tarea & Escala de clasificación de satisfacción \\ \hline
+Adecuado para usuarios capacitados & Número de funciones de poder usados & Eficiencia relativa comparada con un usuario experto & Escala de clasificación para la satisfacción con características de energía \\ \hline
+Facilidad de aprendizaje & Porcentaje de funciones aprendidas & Criterio de tiempo para aprender & Escala de clasificación para la facilidad de aprendizaje \\ \hline
+Tolerancia a errores & Porcentaje de errores corregidos satisfactoriamente & Tiempo gastado en corregir errores & Escala de clasificación para manejo de errores \\ \hline
+\end{tabular}
+\caption{Ejemplos de métricas de usabilidad de la norma ISO 9241.}
+\label{tabla:dos}
+\end{center}
+\end{table}
+
+\section{Conclusiones}
+\subsection{De la investigación documental}
+La ingeniería de la usabilidad es una importante tendencia que propone integrar su metodología a la ingeniería de software.
+\subsection{Del estudio exploratorio}
+Las prácticas promovidas por la Ingeniería de la usabilidad no se encuentran incorporadas en la mayoría de los procesos de desarrollo.
+\newpage
+\section{Referencias}
+DIX ALAN, Human Computer Interaction - 3rd Edition.\newline
+ISO 9126.\newline
+ISO 9241.\newline
+		
 \end{document}
