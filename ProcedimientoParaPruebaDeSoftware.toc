@@ -1,4 +1,11 @@
-\contentsline {section}{\numberline {1}Introducci\'on}{2}
-\contentsline {section}{\numberline {2}Prueba de Funcionalidad}{2}
-\contentsline {subsection}{\numberline {2.1}Objetivo}{2}
-\contentsline {subsection}{\numberline {2.2}Metas}{2}
+\contentsline {section}{\numberline {1}Modelo de test de Usuario}{2}
+\contentsline {section}{\numberline {2}Presentaci\'on}{3}
+\contentsline {section}{\numberline {3}Introducci\'on}{4}
+\contentsline {section}{\numberline {4}Preguntas}{4}
+\contentsline {subsection}{\numberline {4.1}Identidad}{4}
+\contentsline {subsection}{\numberline {4.2}Navegaci\'on libre por contenidos (cinco minutos)}{5}
+\contentsline {subsection}{\numberline {4.3}Tareas espec\IeC {\'\i }ficas}{5}
+\contentsline {subsection}{\numberline {4.4}Navegaci\'on}{6}
+\contentsline {subsection}{\numberline {4.5}Gr\'afica}{6}
+\contentsline {subsection}{\numberline {4.6}B\'usqueda}{7}
+\contentsline {section}{\numberline {5}Cierre}{7}
