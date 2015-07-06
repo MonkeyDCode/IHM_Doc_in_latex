@@ -1,0 +1,209 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+
+\begin{document}
+\begin{titlepage}
+\vspace*{0.15in}
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./logoUAEM}
+\end{center}
+\end{figure}
+\vspace*{0.15in}
+FACULTAD DE INGENIERÍA\\
+\vspace*{0.15in}
+INGENIERÍA EN COMPUTACIÓN \\
+\vspace*{0.6in}
+\begin{large}
+INTERACCIÓN HOMBRE MÁQUINA\\
+\end{large}
+\vspace*{1.5in}
+\begin{Large}
+\textbf{Documentación del proyecto SMILE} \\
+\end{Large}
+\vspace*{1in}
+\begin{large}
+POR: MARIO ALBERTO GUTIÉRREZ CORRAL\\ 
+\hspace{1cm}ALVARO TONATIHU FABIAN SILVERIO \\
+\hspace{2cm}JOSÉ MIGUEL ALONSO MUÑOZ\\
+\end{large}
+\vspace*{0.6in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Profesor: \\
+Dr. Marcelo Romero Huertas \\
+\end{large}
+\end{center}
+\end{titlepage}
+\newpage
+
+\tableofcontents
+\newpage
+\section{Marco referencial}
+\subsection{Predicción de morfología facial}
+\bigskip
+La predicción de la morfología facial ha tenido como principio pronosticar la posición,
+tamaño y/o forma de una estructura craneofacial a partir de otra. Se ha realizado con
+estadística univariada y multivariada, a través de métodos paramétricos que han
+demostrado resultados significativos. Las investigaciones que implicaban evaluación
+craneofacial, inicialmente utilizaban métodos estadísticos muy sencillos y se consideraba
+el uso de la estadística multivariada únicamente en casos especiales donde la
+complejidad de las variables no permitiera resolver la problemática a través de una
+ecuación lineal simple. Una de las ventajas que representó el uso de la estadística
+multivariada fue permitir mayor robustez integrando variables y correlacionándolas,
+aunque la explicación de la misma tendría que estudiarse detalladamente para dar un
+resultado adecuado y entendible. Muchas de las variables tenían la característica de ser
+multidimensionales y se implementaron métodos como el D2 de Mahalanobis, el T2 de
+Hotelling y la función discriminante lineal de Fisher, dando resultados importantes aunque
+su entendimiento fuera complicado (1).
+\newline
+La predicción puede realizarse en casos en que se quiera conocer el crecimiento y
+desarrollo de un paciente y/o en la determinación de las maloclusiones esqueléticas, en
+las cuales el fin es observar el tratamiento más adecuado para el paciente; para esto se
+establecen modelos que intentan disminuir factores aleatorios que los puedan modificar,
+teniendo en cuenta los conceptos de patrón, crecimiento, armonía y balance (2).
+\newline
+Por lo general se calcula el error a través de la fórmula de Dahlberg (3) y se estandarizan
+las variables, se confirma la distribución normal mediante el test de Kolmogorov-Smirnov
+(3), después al tener los resultados se aplica estadística descriptiva en especial
+promedios y desviaciones estándar, continuado de una prueba de 
+tStudent(3), ó estadística no paramétrica con el test de Mann?Whitney U (3), y/o una correlación de Pearson (3), seguido de un análisis de varianza
+ANOVA (3); en ocasiones se evalúan algunas variables con análisis lineal discriminante
+con el fin de saber si es un identificador de un grupo específico (2), o para extraer
+determinantes morfométricos para la distinción de tratamientos efectivos o no efectivos,
+seguido de un análisis multivariado, clusters y tablas cruzadas dos por dos, calculando
+los errores de predicción, se han utilizado análisis de componentes principales (2); y
+análisis de regresión múltiple por lo general complementaría los datos para obtener
+resultados a posteriori de los grupos significativos de los estudios (3).
+\newline
+Tanto en el crecimiento como en las maloclusiones se utilizan puntos anatómicos o
+landmarks que formarán planos o ángulos que se correlacionarán (2). La base craneal
+se relaciona con patrones de crecimiento esquelético, debido a que cuando una base
+craneal es obtusa la cara será divergente, por lo tanto el ángulo de la base craneal se
+asocia con la posición anteroposterior de los maxilares (2). La angulación de la base del
+cráneo, un ángulo ANB mayor de 4°, un overjet mayor de 4mm, un perfil facial convexo,
+una relación molar bilateral Clase II en oclusión céntrica, entre otros, fueron usados para
+determinar la Clase II división 1 y observar las diferencias con un grupo control clase I y
+la relación de la divergencia facial con la maloclusión (3).
+\newline
+Para predecir el crecimiento se ha correlacionado la altura vertical inferior (ANS-Menton)
+y el tamaño y forma del contorno endocraneal tomando medidas desde Silla (S) hasta
+distintos puntos del contorno craneal (3); otro modo de predicción se hace mediante el
+potencial de crecimiento mandibular (GPM) a través de radiografías de mano-muñeca
+como indicador de maduración esquelética y también a través del método de Mito et al
+(MM) que tiene en cuenta el tamaño y forma de la tercera y cuarta vértebras cervicales,
+con el objetivo de pronosticar el crecimiento del maxilar inferior en pacientes con clase III
+esquelética (1). Adicionalmente, se encuentran también el análisis de los componentes
+craneales funcionales (FCC), los cuales se basan en la hipótesis de la matriz funcional y
+al analizar estos datos por métodos no paramétricos como el smoothing spline, se
+determinan curvas de ajuste para diseñar un patrón de crecimiento de cada uno de los
+FCC (3).
+\newline
+En ocasiones se reconoce una variable identificadora de un grupo, como en el caso de
+Pogonion a Punto A (Pg-A) que categorizó efectivamente el crecimiento de los pacientes
+de 6 a 18 años de edad en una población Noruega, además se observó que en muchos
+pacientes el perfil esquelético se vuelve más recto; sin embargo por lo general en
+relaciones mandíbula - base del cráneo anterior que se encuentran extremadamente
+alteradas no mejoran con la edad y muchas de ellas requieren un tratamiento interceptivo
+ya que reflejarán un crecimiento inadecuado (2), incluso este factor aplica en el caso de
+la presencia de una desarmonía extrema clase II dentoesquelética, ya que no existe una
+tendencia a corregirse con el crecimiento (1).
+\newline
+Es por lo anterior que también se ha intentado predecir la posición de estructuras con
+variables modificadoras de patrones como un tratamiento, por ejemplo en la clase
+esquelética en pacientes con mordida cruzada anterior, tomando el crecimiento en cuatro
+tiempos: justo antes del tratamiento, inmediatamente después de la corrección de la
+mordida cruzada anterior, después de dos años y 6 meses donde se obtiene una
+sobremordida vertical y horizontal adecuada, y después de completar el crecimiento
+craneofacial de la pubertad, prediciendo la efectividad o fracaso de un tratamiento
+convencional teniendo en cuenta características distintivas en un mismo tipo de
+maloclusión en diferentes pacientes (1). En este caso se analizaron mediante varios
+modelos de estadística multivariada, como correlación de Pearson en donde los
+resultados significativos son sometidos a un análisis de regresión y las medidas
+significativas se someten a análisis de regresión lineal múltiple (3).
+\newline
+También se han analizado datos longitudinales con controles anuales estableciendo
+curvas de crecimiento para relacionarlos con patrones horizontales y verticales, el
+modelamiento de estos se dan con métodos estadísticos multinivel y los parámetros del
+modelo se estiman con mínimos cuadrados, estableciendo que hay mayor precisión de
+predicción con respecto al movimiento vertical del mentón medido desde Silla (Me-Y) y
+de la distancia lineal de los movimientos del mentón en relación a la silla (Me-R),
+confirmando que hay correlaciones positivas entre el tamaño y la velocidad de
+crecimiento, y que los pacientes con crecimiento extremo vertical empeoran al pasar el
+tiempo sobre los otros pacientes (1).
+\newline
+Con el tiempo se han ido implementando softwares estadísticos como el MLwiN que
+maneja datos perdidos y determina una clase de función matemática que describe una
+curva que se adapte a las medidas y explique las curvas de crecimiento promedio,
+así como herramientas avanzadas de procesamiento de imágenes, que inicialmente son
+empleados en otras áreas, los cuales paulatinamente se han aplicado en ciencias de la
+salud, tal es el caso de la morfometría geométrica, que comenzó a implementarse en la
+predicción de la morfología craneofacial como una hipótesis de puntos que mantienen la
+misma proporción a medida que una estructura aumenta de tamaño, llamados invariantes
+que se ubican dentro de una figura geométrica de 3 o 4 lados, y que pueden predecir la
+forma final de un contorno (3). Esta técnica gradualmente se ha definido más, ya que
+además de hacer estadística descriptiva, se superimponen los trazos por el método de
+Procrustes y se aplican análisis de componentes principales (3).
+\newline
+Por lo general para los análisis mencionados y algunos de morfometría geométrica se
+hacen observaciones y se trazan puntos sobre radiografías (2), sin embargo, la
+tecnología permite estar en función de este tipo de investigaciones, empleando imágenes
+obtenidas a partir de resonancia magnética o tomografías computarizadas, que
+determinan más precisamente el crecimiento craneofacial e incluso tendencias a
+maloclusiones en el paciente, tienen la ventaja de permitir la identificación de landmarks
+que son difíciles de encontrar en radiografías convencionales como en el caso de la base
+del cráneo donde se identifican la fosa anterior, media y posterior que sirven de
+parámetros en la evaluación y predicción de deformidades craneofaciales, determinado
+que la fosa anterior crece más rápido en hombres, la posterior en mujeres y la media es
+similar en ambos sexos, en ocasiones es necesario eliminar factores atípicos a través de
+la técnica Lowess Smoothing, que produce un efecto promedio de los datos (3), también
+se ha empleado en modelamiento de crecimiento mandibular las tomografías
+computarizadas, extrapolando 14851 semilandmarks un algoritmo de difusión geométrica
+condensada mapeadas a un espacio de Procrustes y examinándolas a través de análisis
+de componentes principales, extrayendo un subespacio de una dimensión que construyó
+un modelo satisfactorio, el error promedio más grande que fue encontrado fue de 3.7 mm (2).
+
+
+
+\newpage
+\section{Análisis de requerimientos funcionales}
+
+
+\newpage
+\section{Definición de especificaciones de usabilidad}
+
+
+\newpage
+\section{Análisis y diseño del prototipo}
+
+
+\newpage
+\section{Implementación del prototipo}
+
+
+\newpage
+\section{Evaluación del prototipo y trabajo futuro}
+
+\newpage
+\section{Referencias}
+\bigskip
+1. Kowalski CJ. A commentary on the use of multivariate statistical methods in
+anthropometric research. Am J Phys Anthropol. 1972 Jan;36(1):119-32. PubMed PMID:
+5057727. Epub 1972/01/01. eng
+\newline
+2. Moyers RE, Bookstein FL, Guire KE. The concept of pattern in craniofacial growth.
+Am J Orthod. 1979;76(2):136-48. eng.
+\newline
+3. El-Batran M, Soliman N, El-Wakil K. The relationship between cranial base and
+maxillo-facial morphology in Egyptian children. J Comp Hum Biol [Internet]. 2008;
+59(4):[287-300 pp.]. Available from: http://www.sciencedirect.com/science/article/B7GW4-
+4T719Y5-1/2/78f7c210746b5cda1bd2c936bb767ed4.
+\end{document}
