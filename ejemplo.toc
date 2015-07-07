@@ -1,10 +1,12 @@
+\select@language {spanish}
 \contentsline {section}{\numberline {1}Introducci\'on}{2}
 \contentsline {subsection}{\numberline {1.1}\IeC {\textquestiondown }Por qu\'e "Usabilidad"?}{2}
 \contentsline {section}{\numberline {2}Ingenier\IeC {\'\i }a de la Usabilidad}{2}
 \contentsline {subsection}{\numberline {2.1}Criterios por los cu\'ales se puede determinar un m\'etodo de medici\'on}{3}
 \contentsline {subsection}{\numberline {2.2}Posibles maneras de configurar los niveles de medici\'on en una especificaci\'on de usabilidad}{3}
 \contentsline {subsection}{\numberline {2.3}Ejemplos de m\'etricas de usabilidad de la norma ISO 9241}{4}
-\contentsline {section}{\numberline {3}Conclusiones}{4}
-\contentsline {subsection}{\numberline {3.1}De la investigaci\'on documental}{4}
-\contentsline {subsection}{\numberline {3.2}Del estudio exploratorio}{4}
-\contentsline {section}{\numberline {4}Referencias}{5}
+\contentsline {subsection}{\numberline {2.4}Ejemplos de m\'etricas de usabilidad de la norma ISO 9126}{4}
+\contentsline {section}{\numberline {3}Conclusiones}{7}
+\contentsline {subsection}{\numberline {3.1}De la investigaci\'on documental}{7}
+\contentsline {subsection}{\numberline {3.2}Del estudio exploratorio}{7}
+\contentsline {section}{\numberline {4}Referencias}{8}

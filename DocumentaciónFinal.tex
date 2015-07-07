@@ -1,10 +1,11 @@
 \documentclass[12pt,letterpaper]{article}
+\usepackage[spanish]{babel} 
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\usepackage[left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 
 \begin{document}
 \begin{titlepage}
@@ -46,6 +47,14 @@ Dr. Marcelo Romero Huertas \\
 \newpage
 
 \tableofcontents
+%\cleardoublepage
+%\addcontentsline{toc}{chapter}{Lista de figuras}
+%\listoffigures
+%\cleardoublepage
+%\addcontentsline{toc}{chapter}{Lista de tablas}
+%\listoftables
+
+
 \newpage
 \section{Marco referencial}
 \subsection{Predicción de morfología facial}
@@ -75,7 +84,7 @@ Por lo general se calcula el error a través de la fórmula de Dahlberg (3) y se e
 las variables, se confirma la distribución normal mediante el test de Kolmogorov-Smirnov
 (3), después al tener los resultados se aplica estadística descriptiva en especial
 promedios y desviaciones estándar, continuado de una prueba de 
-tStudent(3), ó estadística no paramétrica con el test de Mann?Whitney U (3), y/o una correlación de Pearson (3), seguido de un análisis de varianza
+tStudent(3), ó estadística no paramétrica con el test de Mann-Whitney U (3), y/o una correlación de Pearson (3), seguido de un análisis de varianza
 ANOVA (3); en ocasiones se evalúan algunas variables con análisis lineal discriminante
 con el fin de saber si es un identificador de un grupo específico (2), o para extraer
 determinantes morfométricos para la distinción de tratamientos efectivos o no efectivos,
@@ -170,36 +179,151 @@ computarizadas, extrapolando 14851 semilandmarks un algoritmo de difusión geomét
 condensada mapeadas a un espacio de Procrustes y examinándolas a través de análisis
 de componentes principales, extrayendo un subespacio de una dimensión que construyó
 un modelo satisfactorio, el error promedio más grande que fue encontrado fue de 3.7 mm (2).
-
 \newpage
 \section{Descripción del problema}
+El trazado cefalométrico es un estudio acerca del crecimiento facial y el diagnostico de posibles patologías y  anomalías.
+\newline
+Esta técnica se realiza manualmente, lo que lleva a un odontólogo a repetir y reproducir incontables veces las estructuras cefalometricas  para cada paciente.
+\newline
+La cefalometría se realiza sobre un trazado obtenido del calco de líneas fundamentales de una radiografía lateral de la cara obtenida del paciente según unas normas determinadas que nos permiten estandarizar los resultados y compararlos con patrones normales.
+\newline
+Existen pacientes con una estética especial, lo que supone una gran dificultad a la hora de encontrar un patrón único de belleza, (el concepto de belleza es distinto en cada persona) Un ejemplo claro de esto es la diferencia entre el sexo masculino y el femenino, que hacen variar las proporciones faciales.
 
-
-
-\newpage
 \section{Justificación}
 Existen tres factores que nos llevan a proponer un software automatizado para la detección de puntos cefalométricos qué son:
 \newline
 \newline
-1. Es frecuente un patrón de crecimiento vertical con inclinación superior del extremo anterior de la base del maxilar. Esto puede producir una anomalía en determinados pacientes en los que una serie de secuelas desfavorables se combinan para formar una mordida abierta esquelética grave.
+1. Es frecuente un patrón de crecimiento vertical con inclinación superior del extremo anterior de la base del maxilar. 
 \newline
 2. También se puede ver un patrón de crecimiento vertical con inclinación inferior del extremo anterior de la base del maxilar.
 \newline
 3. Otra variante incluye un patrón de crecimiento horizontal con una mordida abierta producida por una inclinación anterosuperior de la base del maxilar.
 \newline
 \newline
-Con lo anterior podemos justificar la tarea en un calculo de medidas basadas en patrones y comportamientos estándar de un paciente.
+Con lo anterior podemos justificar la tarea en un calculo de medidas basadas en patrones y comportamientos estándar para analizar a muchos pacientes mediante un software. Además de que se reduciría el tiempo de trazado en cada radiografía.
+\newline
 
-\newpage
+
+%\newpage
 \section{Análisis de requerimientos funcionales}
+1.- Trazado del cefalograma.\newline
+2.- Identificación de puntos cefalométricos.\newline 
+3.- Calculo de índices cefalométricos.\newline
+4.- Identificación de regiones dentales.\newline
+5.- Generación de reporte clínico.\newline
+6.- Historial de reportes cínicos por paciente.\newline
+7.- Manipulación interactiva de radiografías.\newline
 
 
 \newpage
 \section{Definición de especificaciones de usabilidad}
 
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Abrir una radiografía \\ \hline
+Concepto a medir & Completar la apertura de una radiografía \\ \hline
+Método de medición & Minutos/segundos que tarda el usuario en abrir una radiografía \\ \hline
+El peor caso & 10 minutos \\ \hline
+Nivel planeado & 2-5 minutos \\ \hline
+El mejor caso & 1:30 minutos \\ \hline
+\end{tabular}
+\caption{Esta métrica nos ayudará a determinar si la interfaz y el funcionamiento del filechooser es aceptable para un usuario y que le permita hacer un uso sencillo de éste.}
+\label{tabla:5}
+\end{center}
+\end{table}
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Realizar el trazado cefalométrico \\	 \hline
+Concepto a medir & Facilidad con que el usuario realiza la tarea \\ \hline
+Método de medición & Cuestionar al usuario sobre la dificultad que se tuvo para realizar la tarea que se solicitó \\ \hline
+El peor caso & Es muy difícil realizar el trazado \\ \hline
+Nivel planeado & Facilidad para terminar el trazado \\ \hline
+El mejor caso & Se tuvo una intuición desde el principio y no lo hace frustrante o aburrido \\ \hline
+\end{tabular}
+\caption{Esta métrica nos ayudará a determinar si el software es intuitivo a la hora de realizar los trazados,ya que si se reporta una dificultad para realizar el trabajo puede que el usuario se frustre y no use el programa. En cambio, si se reporta facilidad de uso el usuario tendrá libertad para manipular mejor el programa}
+\label{tabla:1}
+\end{center}
+\end{table}
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Imprimir reporte \\	 \hline
+Concepto a medir & Completar la tarea asignada \\ \hline
+Método de medición & Tiempo que tardó el usuario en realizar la tarea \\ \hline
+El peor caso & 5 minutos \\ \hline
+Nivel planeado & 2-4 minutos \\ \hline
+El mejor caso & 1 minuto \\ \hline
+\end{tabular}
+\caption{Esta métrica nos ayudará a determinar si la interfaz muestra intuitividad a la hora de imprimir reportes y la facilidad de ésta}
+\label{tabla:2}
+\end{center}
+\end{table}
+	
+\newpage
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Apariencia \\	 \hline
+Concepto a medir & Gusto del usuario por la apariencia del prototipo \\ \hline
+Método de medición & Cuestionario de opinión sobre la interfaz que se presenta al usuario \\ \hline
+El peor caso & No le gustó al usuario la interfaz que se le presentó \\ \hline
+Nivel planeado & El usuario provee sugerencias para mejorar la interfaz. \\ \hline
+El mejor caso & No se percibe queja alguna por parte del usuario \\ \hline
+\end{tabular}
+\caption{Esta métrica nos ayudará a determinar la preferencia por la apariencia de la interfaz, el programa que se presenta nos permitirá conocer las ausencias y mejoras de características, las cuales se verá la posibilidad de implementar en un futuro.}
+\label{tabla:3}
+\end{center}
+\end{table}
+		
+
 
 \newpage
-\section{Análisis y diseño del prototipo}
+\section{Análisis de usuario y diseño del prototipo}
+\subsection{Análisis del usuario}
+\bigskip
+La población que utilizará por el momento esta aplicación está limitada a:
+\begin{itemize}
+	\item Se buscan usuarios qué esten familiarizados con el uso de programas similares para realizar la tarea(características de iniciante avanzado al menos)
+	\item El grado de estudio debe ser a nivel licenciatura relacionado a las áreas dentales.
+	\item El estilo de aprendizaje tampoco será un factor importante para la elección de usuarios ya que se incluirá una opción de "tutorial".
+	\item Idioma español (latino).
+\end{itemize}
+\subsubsection{Análisis de tareas que realizará el usuario}
+\bigskip
+La tareas que deberá cumplir el usuario serán: 
+\begin{itemize}
+	\item El usuario deberá buscar y abrir expedientes.
+	\item El usuario deberá realizar el trazado cefalométrico de la radiografía.
+	\item El usuario deberá imprimir la radiografía tratada.
+\end{itemize}
+NOTA: ESTAS TAREAS SE DETALLAN EN EL DOCUMENTO DE PROCEDIMIENTO PARA PRUEBAS DE SOFTWARE
+\newpage
+
+\subsection{Diseño}
+\bigskip
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/casos}
+\caption{Diagrama de casos de uso.} \label{fig:casos}
+\end{figure}
+\newpage
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/clases}
+\caption{Diagrama de casos de uso.} \label{fig:clase}
+\end{figure}
+
+
+
 
 
 \newpage
@@ -221,6 +345,37 @@ Am J Orthod. 1979;76(2):136-48. eng.
 \newline
 3. El-Batran M, Soliman N, El-Wakil K. The relationship between cranial base and
 maxillo-facial morphology in Egyptian children. J Comp Hum Biol [Internet]. 2008;
-59(4):[287-300 pp.]. Available from: http://www.sciencedirect.com/science/article/B7GW4-
-4T719Y5-1/2/78f7c210746b5cda1bd2c936bb767ed4.
+59(4):[287-300 pp.]. 
+\newline
+4. Houston WJB. A textbook of orthodontics. Gran Bretaña. Ed.
+Wright. Second edition. 1998.
+\newline
+5. Stockfi sch H. The principles and practice of dentofacial orthopaedics.
+United Kingdom. Quintessence Books. 1998.
+\newline
+6. Graber T, Rakosi T, Petrovic A. Ortopedia dentofacial con aparatos
+funcionales. España. Harcourt. Segunda edición. 1998.
+\newline
+7. Silva R. Aplicación práctica de los indicadores de profundidad
+de sobre mordida vertical, displasia anteroposterior e índice de
+extracción. UNAM, FES Zaragoza 2004.
+\newline
+8. Zou B, Zeng X, Tseng JY. A classifi cation of anterior open bite.
+Zhonghua Kou Qiang Yi Xue Za Zhi. China 2001; 36 (1): 61-63.
+\newline
+9. Beane R, Reimann G. A cephalometric comparison of black
+open-bite subjects and black normals. The Angle Orthodontist
+2002.
+\newline
+10. Beckman S, Segner D. Changes in alveolar morphology during
+open bite treatment and prediction of treatment result. European
+Orthodontics Sociaty 2002; 24: 391-406.
+\newline
+11. Haralabakis NB, Yiagtzis SC, Toutountzakis NM. Cephalometric
+characteristics of open bite in adults: a three-dimensional cephalometric
+evaluation. Int J Adult Orthodon Orthognath Surg 1994;
+\newline
+12. Tanaka S. Morphological study of open bite. Skeletal Class I and
+Class II open bite. Aichi Gakuin Daigaku Shigakkai Shi. Japón
+1990; 28 (4): 1129-1150.
 \end{document}

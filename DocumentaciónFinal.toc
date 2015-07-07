@@ -1,10 +1,14 @@
+\select@language {spanish}
 \contentsline {section}{\numberline {1}Marco referencial}{2}
 \contentsline {subsection}{\numberline {1.1}Predicci\'on de morfolog\IeC {\'\i }a facial}{2}
-\contentsline {section}{\numberline {2}Descripci\'on del problema}{6}
-\contentsline {section}{\numberline {3}Justificaci\'on}{7}
-\contentsline {section}{\numberline {4}An\'alisis de requerimientos funcionales}{8}
-\contentsline {section}{\numberline {5}Definici\'on de especificaciones de usabilidad}{9}
-\contentsline {section}{\numberline {6}An\'alisis y dise\~no del prototipo}{10}
-\contentsline {section}{\numberline {7}Implementaci\'on del prototipo}{11}
-\contentsline {section}{\numberline {8}Evaluaci\'on del prototipo y trabajo futuro}{12}
-\contentsline {section}{\numberline {9}Referencias}{13}
+\contentsline {section}{\numberline {2}Descripci\'on del problema}{5}
+\contentsline {section}{\numberline {3}Justificaci\'on}{5}
+\contentsline {section}{\numberline {4}An\'alisis de requerimientos funcionales}{5}
+\contentsline {section}{\numberline {5}Definici\'on de especificaciones de usabilidad}{7}
+\contentsline {section}{\numberline {6}An\'alisis de usuario y dise\~no del prototipo}{9}
+\contentsline {subsection}{\numberline {6.1}An\'alisis del usuario}{9}
+\contentsline {subsubsection}{\numberline {6.1.1}An\'alisis de tareas que realizar\'a el usuario}{9}
+\contentsline {subsection}{\numberline {6.2}Dise\~no}{10}
+\contentsline {section}{\numberline {7}Implementaci\'on del prototipo}{12}
+\contentsline {section}{\numberline {8}Evaluaci\'on del prototipo y trabajo futuro}{13}
+\contentsline {section}{\numberline {9}Referencias}{14}
