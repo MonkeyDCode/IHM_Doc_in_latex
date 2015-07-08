@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Modelo de test de Usuario}{2}
 \contentsline {section}{\numberline {2}Presentaci\'on}{3}
 \contentsline {section}{\numberline {3}Introducci\'on}{4}
-\contentsline {section}{\numberline {4}Preguntas}{4}
-\contentsline {subsection}{\numberline {4.1}Identidad}{4}
-\contentsline {subsection}{\numberline {4.2}Navegaci\'on libre por contenidos (cinco minutos)}{5}
-\contentsline {subsection}{\numberline {4.3}Tareas espec\IeC {\'\i }ficas}{5}
-\contentsline {subsection}{\numberline {4.4}Navegaci\'on}{6}
-\contentsline {subsection}{\numberline {4.5}Gr\'afica}{6}
-\contentsline {subsection}{\numberline {4.6}B\'usqueda}{7}
-\contentsline {section}{\numberline {5}Cierre}{7}
+\contentsline {section}{\numberline {4}Tareas espec\IeC {\'\i }ficas (Evaluaci\'on del software)}{4}
+\contentsline {section}{\numberline {5}Preguntas (Entrevista posterior)}{5}
+\contentsline {subsection}{\numberline {5.1}Identidad}{5}
+\contentsline {subsection}{\numberline {5.2}Navegaci\'on libre por contenidos}{6}
+\contentsline {subsection}{\numberline {5.3}Navegaci\'on}{6}
+\contentsline {subsection}{\numberline {5.4}Gr\'afica}{6}
+\contentsline {subsection}{\numberline {5.5}B\'usqueda}{7}
+\contentsline {section}{\numberline {6}Cierre}{7}

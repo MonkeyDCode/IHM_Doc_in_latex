@@ -4,11 +4,17 @@
 \contentsline {section}{\numberline {2}Descripci\'on del problema}{5}
 \contentsline {section}{\numberline {3}Justificaci\'on}{5}
 \contentsline {section}{\numberline {4}An\'alisis de requerimientos funcionales}{5}
-\contentsline {section}{\numberline {5}Definici\'on de especificaciones de usabilidad}{7}
-\contentsline {section}{\numberline {6}An\'alisis de usuario y dise\~no del prototipo}{9}
-\contentsline {subsection}{\numberline {6.1}An\'alisis del usuario}{9}
-\contentsline {subsubsection}{\numberline {6.1.1}An\'alisis de tareas que realizar\'a el usuario}{9}
-\contentsline {subsection}{\numberline {6.2}Dise\~no}{10}
-\contentsline {section}{\numberline {7}Implementaci\'on del prototipo}{12}
-\contentsline {section}{\numberline {8}Evaluaci\'on del prototipo y trabajo futuro}{13}
-\contentsline {section}{\numberline {9}Referencias}{14}
+\contentsline {section}{\numberline {5}Definici\'on de especificaciones de usabilidad}{6}
+\contentsline {section}{\numberline {6}An\'alisis de usuario y dise\~no del prototipo}{8}
+\contentsline {subsection}{\numberline {6.1}An\'alisis del usuario}{8}
+\contentsline {subsubsection}{\numberline {6.1.1}An\'alisis de tareas que realizar\'a el usuario}{8}
+\contentsline {subsection}{\numberline {6.2}Dise\~no}{9}
+\contentsline {section}{\numberline {7}Implementaci\'on del prototipo}{14}
+\contentsline {subsection}{\numberline {7.1}prototipado de la interfaz de usuario}{15}
+\contentsline {subsection}{\numberline {7.2}prototipado funcional}{18}
+\contentsline {section}{\numberline {8}Evaluaci\'on del prototipo y trabajo futuro}{20}
+\contentsline {subsection}{\numberline {8.1}Evaluaci\'on del prototipo}{20}
+\contentsline {subsubsection}{\numberline {8.1.1}Usuario 1}{20}
+\contentsline {subsubsection}{\numberline {8.1.2}Usuario 2}{20}
+\contentsline {subsection}{\numberline {8.2}Trabajo futuro}{21}
+\contentsline {section}{\numberline {9}Referencias}{23}

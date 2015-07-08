@@ -192,7 +192,6 @@ Existen pacientes con una estética especial, lo que supone una gran dificultad a
 \section{Justificación}
 Existen tres factores que nos llevan a proponer un software automatizado para la detección de puntos cefalométricos qué son:
 \newline
-\newline
 1. Es frecuente un patrón de crecimiento vertical con inclinación superior del extremo anterior de la base del maxilar. 
 \newline
 2. También se puede ver un patrón de crecimiento vertical con inclinación inferior del extremo anterior de la base del maxilar.
@@ -292,7 +291,7 @@ El mejor caso & No se percibe queja alguna por parte del usuario \\ \hline
 \bigskip
 La población que utilizará por el momento esta aplicación está limitada a:
 \begin{itemize}
-	\item Se buscan usuarios qué esten familiarizados con el uso de programas similares para realizar la tarea(características de iniciante avanzado al menos)
+	\item Se buscan usuarios qué estén familiarizados con el uso de programas similares para realizar la tarea(características de iniciante avanzado al menos).
 	\item El grado de estudio debe ser a nivel licenciatura relacionado a las áreas dentales.
 	\item El estilo de aprendizaje tampoco será un factor importante para la elección de usuarios ya que se incluirá una opción de "tutorial".
 	\item Idioma español (latino).
@@ -321,34 +320,199 @@ NOTA: ESTAS TAREAS SE DETALLAN EN EL DOCUMENTO DE PROCEDIMIENTO PARA PRUEBAS DE 
 \includegraphics[width=0.8\textwidth]{./images/clases}
 \caption{Diagrama de casos de uso.} \label{fig:clase}
 \end{figure}
-
-
+\newpage
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/estado1}
+\caption{Diagrama de estados de la aplicación.} \label{fig:estado1}
+\end{figure}	
+\newpage
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/estado2}
+\caption{Diagrama de estados del usuario.} \label{fig:estado2}
+\end{figure}
+\newpage
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/estado3}
+\caption{Diagrama de actividades del usuario.} \label{fig:estado3}
+\end{figure}
 
 
 
 \newpage
 \section{Implementación del prototipo}
+Todo el proyecto ésta basado en dos lenguajes principales, java y matlab. Haciendo una conexión entre Java y Matlab pudimos aprovechar las bondades de Matlab sin perder la base principal del proyecto, Java.\newline
+Java fue ocupado para la mayoría del proyecto, tanto para interfaces así como para parte de la funcionalidad del proyecto.\newline
+Matlab fue ocupado para el tratado de las radiografías.\newline
+NOTA: por motivos de privacidad del proyecto no se incluyen partes de código, para así resguardar la integridad del mismo.
+\newpage
+\subsection{prototipado de la interfaz de usuario}
+\bigskip
+El diseño de interfaces para el primer prototipo quedó de la siguiente manera:
+\newline
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/5}
+\caption{Interfaz principal del programa.} \label{fig:5}
+\end{figure}
+
+\newpage
+
+\bigskip
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/4}
+\caption{Interfaz que se muestra para buscar radiografias.} \label{fig:4}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/2}
+\caption{Interfaz donde se realizará la manipulación de radiografias.} \label{fig:2}
+\end{figure}
+Como se puede observar la interfaz gráfica se muestra de forma más llamativa e intuitiva, justificado por las encuestas realizadas, dónde se sugería ésto.
+
+\newpage
+\subsection{prototipado funcional}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/3}
+\caption{Observando la imgen se puede apreciar la funcionalidad de ir haciendo notas en forma de reporte a la izquierda de la radiografía.} \label{fig:3}
+\end{figure}
+\newpage
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{./images/1}
+\caption{En ésta imagen se puede apreciar la funcionalidad del trazado, si bien en estos momentos es asistido se planea automatizarlo en una segunda etapa de desarrollo.} \label{fig:1}
+\end{figure}
 
 
 \newpage
 \section{Evaluación del prototipo y trabajo futuro}
+\subsection{Evaluación del prototipo}
+\subsubsection{Usuario 1}
+\bigskip
+A lo largo de la evaluación de la herramienta SMILE el usuario logró ubicar con facilidad el elemento para abrir una radiografía, sin embargo tuvo bastantes dificultades al estar buscando la imagen a analizar. De tal forma el usuario expresó su inconformidad por el método que se empleó para la búsqueda las imágenes. Tras un lapso de 5 min. El usuario logró  continuar con la evaluación.
+\newline
+En la ventana que se mostró tras haber elegido la imagen, el usuario pudo ver con claridad la imagen seleccionada, también demostró una gran facilidad para la generación de puntos antropométricos dentro de la imagen. Esto de se deba a que la herramienta aún debe ser asistida por la mano humana. Tras haber hecho la ubicación de los puntos procedió  a llenar los datos del usuario donde cometió un pequeño error dentro de uno de los campos solicitados, sin embargo el usuario identifico rápidamente el campo donde había cometido el error. Después de haber hecho la corrección escogió la opción de impresión de reporte la cual ubico con gran facilidad así como también el resto de los símbolos de guardado de reporte, etc.
+La opinión en general del usuario fue:
+\newline
+La herramienta muestra una gran ayuda a la persona que este empleando la herramienta sin embargo, esta tiene diversos aspectos que deben ser cubiertos como por ejemplo la ubicación de los archivos de imagen para las radiografías, otra observación que realizo el usuario fue el color con el que se pintan los puntos y líneas que se observan en la imagen a analizar
+\subsubsection{Usuario 2}
+Al inicio de la evaluación el usuario mostró estar en calma, ya que pudo abrir el menú para la búsqueda de la imagen pero después empezó a mostrar cierto nivel de enojo ya que no encontraba la carpeta de imágenes, así que solicito ayuda a un joven practicante que se encontraba con el usuario en el consultorio,  al momento en la que el joven observó la pantalla dijo al usuario como podía encontrar las imágenes. Con ello el usuario ubico rápidamente las imágenes, una vez elegida la imagen el usuario observó la imagen con cierto desagrado esto se debió un poco a la función de reescalar con la que cuenta la herramienta.\newline
+Una vez en la ventana el usuario hizo la ubicación de los puntos fáciles principales, donde hizo mención que no podía ver bien los puntos debido al color que estos tenían. Tras haber hecho esto el usuario continuo con la prueba donde pudo encontrar de manera rápida y pronta la opción de generar reporte. Con esto el usuario logró terminar la prueba, donde el joven que lo acompaña en su consultorio, pidió disculpas por el comportamiento del usuario durante la prueba.\newline
+
+\subsection{Trabajo futuro}
+\bigskip
+Actualmente la herramienta aún es asistida, así  que se tiene como objetivo a futuro hacer que la misma funcione de forma automática para la generación de los puntos antropométricos faciales. Así que para este aspecto se propone la siguiente métrica.\newline
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Trazado cefalómetro automático \\	 \hline
+Concepto a medir & Mostrar la imagen con los puntos cefalómetricos solicitados por el usuario \\ \hline
+Método de medición &Minutos/segundos que tarda la herramienta en generar los puntos solicitados \\ \hline
+El peor caso & 5 minutos \\ \hline
+Nivel planeado & 3-4 minutos \\ \hline
+El mejor caso & 2 minutos \\ \hline
+\end{tabular}
+\caption{Esta métrica nos ayudará a determinar la herramienta es lo suficientemente eficaz para procesamiento de la imagen.}
+\label{tabla:4}
+\end{center}
+\end{table}
+
+
+Otro punto de mejora a considerar es el guardado de expedientes, ya que esto es de vital importancia para el especialista, debido a que la mayoría de ellos guardan los expedientes para futuras referencias. Por ello la siguiente métrica a considerar se establecería de la siguiente forma.
+\newline
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Guardar expediente \\	 \hline
+Concepto a medir & Completar el guardado de un expediente del paciente que se está atendiendo  \\ \hline
+Método de medición & Minutos/segundos que el usuario emplea en guardar un expediente \\ \hline
+El peor caso & 8 minutos \\ \hline
+Nivel planeado & 2-3 minutos \\ \hline
+El mejor caso & 1 minutos \\ \hline
+\end{tabular}
+\label{tabla:5}
+\end{center}
+\end{table}
+
+
+Tras ver los puntos antropométricos el especialista podrá hacer una manipulación de las piezas dentales esto, con la finalidad de saber que procedimientos deberá aplicar y cuánto tiempo durará el tratamiento al paciente. Entonces con lo anterior la propuesta métrica es:\newline
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Manipular las piezas dentales de la imagen \\	 \hline
+Concepto a medir & Completar la manipulación de las piezas deseadas  \\ \hline
+Método de medición & Minutos/segundos que el usuario usa para la manipulación de las piezas  \\ \hline
+El peor caso & 30 minutos \\ \hline
+Nivel planeado & 10-25 minutos \\ \hline
+El mejor caso & 8 minutos \\ \hline
+\end{tabular}
+\label{tabla:6}
+\end{center}
+\end{table}
+
+Una vez establecido y explicado los procedimientos que se le aplicaran al paciente, el especialista podrá mostrar al paciente como que es lucirá después del tratamiento a aplicar, con modelado 3D para mejor apreciación.\newline
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Mostrar el modelado 3D al paciente \\	 \hline
+Concepto a medir & Generar el modelo en tercera dimensión  \\ \hline
+Método de medición & Minutos/segundos que el usuario tardó en mostrar el modelado  \\ \hline
+El peor caso & 25 minutos \\ \hline
+Nivel planeado & 15-20 minutos \\ \hline
+El mejor caso & 10 minutos \\ \hline
+\end{tabular}
+\label{tabla:7}
+\end{center}
+\end{table}
+
+Por ultimo tenemos como objetivo el correcto escalamiento de la radiografías a manipular, esto es importante ya que el especialista debe ser capaz de observar con claridad la radiografía para realizar una manipulación correcta de la misma, por ello la métrica se emplearía de siguiente forma.
+\newline
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+Atributo & Escalar la imagen \\	 \hline
+Concepto a medir & Mostrar la imagen de acuerdo al tamaño establecido en la ventana del usuario  \\ \hline
+Método de medición & Minutos/segundos que la herramienta ocupa para re escalar la imagen  \\ \hline
+El peor caso & 1 segundo \\ \hline
+Nivel planeado & 15-20 segundos \\ \hline
+El mejor caso & 10 milisegundos \\ \hline
+\end{tabular}
+\label{tabla:8}
+\end{center}
+\end{table}
+
+
 
 \newpage
 \section{Referencias}
 \bigskip
-1. Kowalski CJ. A commentary on the use of multivariate statistical methods in
-anthropometric research. Am J Phys Anthropol. 1972 Jan;36(1):119-32. PubMed PMID:
-5057727. Epub 1972/01/01. eng
+1. Kowalski CJ. A commentary on the use of multivariate statistical methods in anthropometric research. Am J Phys Anthropol. 1972 Jan;36(1):119-32. PubMed PMID: 5057727. Epub 1972/01/01. 
 \newline
-2. Moyers RE, Bookstein FL, Guire KE. The concept of pattern in craniofacial growth.
-Am J Orthod. 1979;76(2):136-48. eng.
+2. Moyers RE, Bookstein FL, Guire KE. The concept of pattern in craniofacial growth. Am J Orthod. 1979;76(2):136-48. eng.
 \newline
-3. El-Batran M, Soliman N, El-Wakil K. The relationship between cranial base and
-maxillo-facial morphology in Egyptian children. J Comp Hum Biol [Internet]. 2008;
-59(4):[287-300 pp.]. 
+3. El-Batran M, Soliman N, El-Wakil K. The relationship between cranial base and maxillo-facial morphology in Egyptian children. J Comp Hum Biol [Internet]. 2008; 59(4):[287-300 pp.]. 
 \newline
-4. Houston WJB. A textbook of orthodontics. Gran Bretaña. Ed.
-Wright. Second edition. 1998.
+4. Houston WJB. A textbook of orthodontics. Gran Bretaña. Ed. Wright. Second edition. 1998.
 \newline
 5. Stockfi sch H. The principles and practice of dentofacial orthopaedics.
 United Kingdom. Quintessence Books. 1998.
@@ -363,19 +527,14 @@ extracción. UNAM, FES Zaragoza 2004.
 8. Zou B, Zeng X, Tseng JY. A classifi cation of anterior open bite.
 Zhonghua Kou Qiang Yi Xue Za Zhi. China 2001; 36 (1): 61-63.
 \newline
-9. Beane R, Reimann G. A cephalometric comparison of black
-open-bite subjects and black normals. The Angle Orthodontist
-2002.
+9. Beane R, Reimann G. A cephalometric comparison of black open-bite subjects and black normals. The Angle Orthodontist 2002.
 \newline
 10. Beckman S, Segner D. Changes in alveolar morphology during
 open bite treatment and prediction of treatment result. European
 Orthodontics Sociaty 2002; 24: 391-406.
 \newline
-11. Haralabakis NB, Yiagtzis SC, Toutountzakis NM. Cephalometric
-characteristics of open bite in adults: a three-dimensional cephalometric
-evaluation. Int J Adult Orthodon Orthognath Surg 1994;
+11. Haralabakis NB, Yiagtzis SC, Toutountzakis NM. Cephalometric characteristics of open bite in adults: a three-dimensional cephalometric evaluation. Int J Adult Orthodon Orthognath Surg 1994;
 \newline
-12. Tanaka S. Morphological study of open bite. Skeletal Class I and
-Class II open bite. Aichi Gakuin Daigaku Shigakkai Shi. Japón
-1990; 28 (4): 1129-1150.
+12. Tanaka S. Morphological study of open bite. Skeletal Class I and Class II open bite. Aichi Gakuin Daigaku Shigakkai Shi. Japón 1990; 28 (4): 1129-1150.
+13. Dix Alan, Finlay Janet, D. AbowdGregory, Beale Russell. Human-computer interaction. Third edition, Pearson 2004
 \end{document}
